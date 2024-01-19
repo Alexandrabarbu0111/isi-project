@@ -1,0 +1,40 @@
+<div class="whole-page">
+  <div class="title">
+    <h1>
+      Welcome to HealthRoute
+    </h1>
+    <img src="/assets/imgs/Logo.png" alt="Logo image" class="heart-image">
+  </div>
+
+  <div *ngIf="sign_up" class="sign_in_div">
+    <div class="input-group">
+      <span class="span-field span-field-email">Enter your Email:</span>
+      <input class="input-field input-field-email" placeholder="example@domain.com" type="email" required [(ngModel)]="email">
+    </div>
+    <div class="input-group">
+      <span class="span-field span-field-password">Set a Password:</span>
+      <input class="input-field input-field-password" placeholder="******" type="password" required [(ngModel)]="password">
+    </div>
+      <button class="mat-raised-button sign_buttons sign-buttons-submit" (click)="signUp()">Submit</button>
+  </div>
+  <div *ngIf="sign_in" class="sign_in_div">
+    <div class="input-group">
+      <span class="span-field span-field-email">Email:</span>
+      <input class="input-field input-field-email" placeholder="example@domain.com" type="email" name="email" required="required" [(ngModel)]="email">
+    </div>
+    <div class="input-group">
+      <span class="span-field span-field-password">Password:</span>
+      <input class="input-field input-field-password" placeholder="******" type="password" required="required" [(ngModel)]="password">
+    </div>
+
+    <button class="mat-raised-button sign_buttons sign-buttons-submit" (click)="signIn()">Submit</button>
+  </div>
+
+  <div class="mat-body sign_div">
+    <button class="mat-raised-button sign_buttons" *ngIf="!sign_in && !sign_up" (click)="set_sign_in(true)" >Sign In</button>
+    <button class="mat-raised-button sign_buttons" *ngIf="!sign_in && !sign_up" (click)="set_sign_up(true)" >Sign Up</button>
+    <button class="mat-raised-button sign_buttons" *ngIf="sign_in || sign_up" (click)="go_back()">Back</button>
+    
+  </div>
+
+</div>

@@ -1,0 +1,93 @@
+.sign_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 9%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.sign_buttons {
+  border: 2px solid #7f0a2b;
+  color: #7f0a2b;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  margin-left: 9%;
+  margin-right: 9%;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.sign_buttons:hover {
+  background-color: #7f0a2b;
+  color: white;
+}
+
+.sign-buttons-submit {
+  background-color: #7f0a2b;
+  color: white;
+}
+.sign-buttons-submit:hover {
+  border: 2px solid #7f0a2b;
+  color: #7f0a2b;
+  background-color: white;
+}
+
+.heart-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sign_in_div {
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+  align-items: center;
+}
+
+.input-field {
+  height: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  border: 2px solid #7f0a2b;
+  color: #7f0a2b;
+  //border-color: #7f0a2b;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.input-field:focus {
+
+  //border: 2px solid white !important;
+}
+
+.span-field {
+  font-size: 16px;
+  //border: 2px solid #7f0a2b;
+  color: #7f0a2b;
+  padding: 10px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  color: #7f0a2b;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input::placeholder {
+  color: #7f0a2b;
+}
+
+input:focus {
+  outline: none !important;
+  border: none;
+  border-bottom: 2px solid #7f0a2b;
+  font-size: 16px;
+  color: #7f0a2b;
+}
+

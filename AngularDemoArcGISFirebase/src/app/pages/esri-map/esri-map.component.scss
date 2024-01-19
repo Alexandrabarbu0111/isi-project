@@ -1,0 +1,129 @@
+/* import the required JSAPI css */
+// @import url('https://js.arcgis.com/4.12/esri/css/main.css');
+
+.esri-view {
+  height: 500px;
+}
+
+.label {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.sign_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.sign_buttons {
+  border: 2px solid #7f0a2b;
+  color: #7f0a2b;
+  //padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  //margin-left: 15%;
+  margin-right: 5%;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.sign_buttons:hover {
+  background-color: #7f0a2b;
+  color: white;
+}
+
+.sign-buttons-submit {
+  display: flex;
+  background-color: #7f0a2b;
+  color: white;
+}
+.sign-buttons-submit:hover {
+  border: 2px solid #7f0a2b;
+  color: #7f0a2b;
+  background-color: white;
+}
+
+.heart-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sign_in_div {
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+  align-items: center;
+}
+
+.input-field {
+  height: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  border: 2px solid #7f0a2b;
+  color: #7f0a2b;
+  //border-color: #7f0a2b;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.input-field:focus {
+
+  //border: 2px solid white !important;
+}
+
+.span-field {
+  font-size: 16px;
+  //border: 2px solid #7f0a2b;
+  color: #7f0a2b;
+  padding: 10px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  color: #7f0a2b;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input::placeholder {
+  color: #7f0a2b;
+}
+
+input:focus {
+  outline: none !important;
+  border: none;
+  border-bottom: 2px solid #7f0a2b;
+  font-size: 16px;
+  color: #7f0a2b;
+}
+
+.special-button:focus {
+  background-color: #0b7923;
+  color: white;
+}
+
+.emergency-button {
+  width: 17%;
+  border-radius: 50px;
+  margin-left: 0.5%;
+  justify-content: center;
+}
+
+.whole-page {
+  height: 100%;
+  background-color: #fffaf0;
+  display: contents !important;
+}
